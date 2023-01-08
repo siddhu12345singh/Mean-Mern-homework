@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *{
+        font-family: "Baloo Bhai ",cursive;
+        box-sizing: border-box;
+      }
+      .container {
+        position: absolute;
+        /* border: 2px solid black; */
+        display: inline-block;
+        right: -150px;
+        margin: 125px 220px;
+        top: 90px;
+      }
+      body {
+        background-image: url(menu.jpg);
+        font-family: "Baloo Bai", cursive;
+      }
+      .form-group {
+        padding: 5px 10px;
+        margin: 2px 35px;
+        color: rgb(184, 41, 41);
+        font-family: "Baloo Bai", cursive;
+        font-size: 23px;
+      }
+      ::placeholder {
+        font-family: "Baloo Bhai", cursive;
+
+        font-size: 20px;
+      }
+      .ad h1 {
+        color: rgb(255, 17, 5);
+        position: absolute;
+        font-size: 75px;
+        /* border: 2px solid black; */
+        padding: 2px;
+        margin: 70px 520px;
+        display: inline-block;
+        top: 256px;
+      }
+      #btn {
+        font-family: "Baloo Bhai", cursive;
+        color: white;
+        background-color: green;
+        margin: 20px 20px;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ad">
+      <h1>Order Your Favourite Food</h1>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          Name:
+          <input type="text" placeholder="Enter your name" maxlength="50" />
+        </div>
+        <div class="form-group">
+          Date:
+          <input type="date" placeholder="">
+        </div>
+        <div class="form-group">
+          E-mail:
+          <input type="email" placeholder="Enter the email" />
+        </div>
+        <div class="form-group">
+          Contact Number:
+          <input
+            type="number"
+            placeholder="Enter your phone number"
+            maxlength="10"
+          />
+        </div>
+        <div class="form-group">
+          Choice:
+          <input type="checkbox" />veg <input type="checkbox" />non-veg
+        </div>
+
+        <div class="form-group">
+         Restaurants:
+          <select>
+            <option>Choose Your Restaurants</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+          </select>
+        </div>
+        <div class="form-group">
+          Dish:
+          <select>
+            <option>Choose Your Dish</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+          </select>
+        </div>
+        <div class="form-group">
+           Drink:
+          <select>
+            <option>Choose Your Drink</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+          </select>
+        </div>
+        <div class="form-group">
+         Sweet:
+          <select>
+            <option>Choose Your Sweet</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+            <option>xyz</option>
+          </select>
+        </div>
+        <div class="form-group">
+          Address:
+          <input type="text" placeholder="Enter your  adress" />
+        </div>
+         <div class="form-group">
+          Address:
+          <input type="text" placeholder="Enter your state" />
+        </div>
+        <button class="btn">
+          <button id="btn">Call us</button>
+          <button id="btn">Email us</button>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
